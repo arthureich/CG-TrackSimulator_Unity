@@ -1,0 +1,87 @@
+/* Container Raiz */
+.hud-root {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between; /* Joga um pro topo, outro pro fundo */
+    padding: 20px;
+    position: absolute;
+}
+
+/* --- PAINEL SUPERIOR (Tempo) --- */
+.top-panel {
+    align-self: center; /* Centraliza no topo */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 40px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.big-text {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.time-text { color: #FFD700; /* Dourado */ }
+
+.sub-text {
+    font-size: 24px;
+    color: #bdc3c7;
+    margin-top: 5px;
+}
+
+/* --- PAINEL INFERIOR (Barras) --- */
+.bottom-panel {
+    align-self: flex-end; /* Canto direito inferior */
+    width: 350px;
+    background-color: rgba(15, 37, 69, 0.85); /* Azul HUD */
+    padding: 20px;
+    border-radius: 10px;
+    border-left-width: 4px;
+    border-left-color: #6d8db5;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.stat-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.label-stat {
+    color: #bdc3c7;
+    -unity-font-style: bold;
+    font-size: 16px;
+}
+
+.value-text {
+    color: white;
+    -unity-font-style: bold;
+    font-size: 18px;
+}
+
+/* --- BARRAS --- */
+.bar-background {
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden; /* Corta o fill que sobrar */
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.1);
+}
+
+.bar-fill {
+    width: 50%; /* Será controlado via Script */
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.1s; /* Animação suave */
+}
+
+.speed-fill { background-color: #00d2ff; /* Azul Neon */ }
+.stamina-fill { background-color: #4CAF50; /* Verde */ }

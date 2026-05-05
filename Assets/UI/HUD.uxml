@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/HUDStyle.uss?fileID=7433441132597879392&amp;guid=7b1c98d314c28534eb1f85213d1b4282&amp;type=3#HUDStyle" />
+    <ui:VisualElement name="HUD_Root" class="hud-root" style="top: 0; left: 0;">
+        <ui:VisualElement class="top-panel" style="width: 450px; height: 79px; top: auto; bottom: auto; margin-top: 10px;">
+            <ui:Label name="TimeLabel" text="00.00 s" class="big-text time-text" style="height: 70px; width: 192px; position: absolute; left: 10px; bottom: 4px;" />
+            <ui:Label name="DistLabel" text="0 m" class="sub-text" style="position: absolute; right: 10px; bottom: 16px; font-size: 34px;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="bottom-panel">
+            <ui:VisualElement class="stat-row">
+                <ui:Label text="VELOCIDADE" class="label-stat" />
+                <ui:Label name="SpeedValue" text="0.0 m/s" class="value-text" />
+            </ui:VisualElement>
+            <ui:VisualElement class="bar-background">
+                <ui:VisualElement name="SpeedBarFill" class="bar-fill speed-fill" />
+            </ui:VisualElement>
+            <ui:VisualElement style="height: 15px;" />
+            <ui:VisualElement class="stat-row">
+                <ui:Label text="STAMINA" class="label-stat" />
+                <ui:Label name="StaminaValue" text="100%" class="value-text" />
+            </ui:VisualElement>
+            <ui:VisualElement class="bar-background">
+                <ui:VisualElement name="StaminaBarFill" class="bar-fill stamina-fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

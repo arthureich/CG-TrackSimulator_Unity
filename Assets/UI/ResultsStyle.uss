@@ -1,0 +1,147 @@
+/* --- FUNDO --- */
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Images/estadio_fundo.png'); 
+}
+
+/* --- PAINEL PRINCIPAL --- */
+.main-panel {
+    width: 100%;
+    height: 100%;
+    min-width: 700px;
+    min-height: 500px;
+    background-color: #0f2545; /* Azul Escuro Profundo */
+    border-width: 5px;
+    border-color: #6d8db5; /* Borda Prateada */
+    border-radius: 12px;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    /* Sombra e profundidade */
+    border-bottom-width: 8px;
+    border-bottom-color: #051020;
+}
+
+/* --- TÍTULO --- */
+.title-container {
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.title-text {
+    font-size: 48px;
+    -unity-font-style: bold-and-italic;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 0;
+}
+
+.white-text { color: white; }
+.gold-text { color: #FFD700; }
+
+/* --- LISTA DE RESULTADOS --- */
+.results-list-container {
+    width: 95%;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* ESTILOS DAS LINHAS (Usados pelo C#) */
+.result-row {
+    flex-direction: row;
+    height: 45px;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(30, 50, 80, 0.6); 
+    margin-bottom: 3px;
+    border-radius: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+/* Rank (Badge Laranja) */
+.rank-badge {
+    width: 35px;
+    height: 35px;
+    background-color: #e67e22; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-width: 2px;
+    border-color: #d35400;
+    border-bottom-width: 4px; 
+}
+
+.rank-text {
+    align-self: center;
+    font-size: 22px;
+    color: white;
+    -unity-font-style: bold;
+}
+
+/* Texto Geral da Linha */
+.row-text {
+    font-size: 22px;
+    color: white;
+    -unity-font-style: bold;
+}
+
+.name-col { width: 300px; }
+.time-col { width: 150px; -unity-text-align: middle-right; color: #f1c40f; /* Amarelo pro tempo */ }
+.lane-col { width: 120px; -unity-text-align: middle-right; color: #bdc3c7; font-size: 18px; }
+
+/* Separador Vertical */
+.separator {
+    width: 2px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.2);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* --- BOTÃO VOLTAR --- */
+.back-button {
+    width: 300px;
+    height: 70px;
+    background-color: #4CAF50; /* Verde */
+    border-width: 2px;
+    border-color: #81C784;
+    border-radius: 8px;
+    color: white;
+    font-size: 28px;
+    -unity-font-style: bold;
+    border-bottom-width: 6px;
+    border-bottom-color: #2E7D32;
+    transition: 0.1s;
+}
+
+.back-button:active {
+    border-bottom-width: 0px;
+    translate: 0px 6px;
+    background-color: #388E3C;
+}
+
+/* --- PARAFUSOS --- */
+.bolt {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #bdc3c7;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #7f8c8d;
+}
+.top-left { top: 8px; left: 8px; }
+.top-right { top: 8px; right: 8px; }
+.bottom-left { bottom: 8px; left: 8px; }
+.bottom-right { bottom: 8px; right: 8px; }

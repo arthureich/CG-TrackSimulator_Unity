@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ResultsStyle.uss?fileID=7433441132597879392&amp;guid=cd4c6b6219c6a5544b80a844af045723&amp;type=3#ResultsStyle" />
+    <ui:VisualElement name="Background" class="background" style="top: -4px; left: 0;">
+        <ui:VisualElement name="MainPanel" class="main-panel" style="height: 598px; width: 923px;">
+            <ui:VisualElement class="bolt top-left" />
+            <ui:VisualElement class="bolt top-right" />
+            <ui:VisualElement class="bolt bottom-left" />
+            <ui:VisualElement class="bolt bottom-right" />
+            <ui:VisualElement class="title-container">
+                <ui:Label text="RESULTADOS" class="title-text white-text" style="font-size: 36px; top: auto; position: relative; bottom: 23px;" />
+                <ui:Label text=" DA CORRIDA" class="title-text gold-text" style="font-size: 36px; bottom: 23px;" />
+            </ui:VisualElement>
+            <ui:ScrollView name="ResultsList" class="results-list-container" style="width: 812px; font-size: 2px; height: 500px; scale: 1 1.1;" />
+            <ui:Button text="VOLTAR AO MENU" name="BtnBack" class="back-button" style="height: 38px; width: 250px; font-size: 19px; top: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

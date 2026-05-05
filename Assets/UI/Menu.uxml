@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MenuStyle.uss?fileID=7433441132597879392&amp;guid=59b912c120692b9438875c5b2263312f&amp;type=3#MenuStyle" />
+    <ui:VisualElement name="Background" class="background">
+        <ui:VisualElement name="MainPanel" class="main-panel" style="height: 528px; width: 761px;">
+            <ui:VisualElement class="bolt top-left" />
+            <ui:VisualElement class="bolt top-right" />
+            <ui:VisualElement class="bolt bottom-left" />
+            <ui:VisualElement class="bolt bottom-right" />
+            <ui:Label text="TRACK SIMULATOR" name="Title" class="title-text" />
+            <ui:VisualElement class="row header-row">
+                <ui:VisualElement class="header-box blue-header">
+                    <ui:Label text="SELECIONE A PROVA" />
+                </ui:VisualElement>
+                <ui:VisualElement class="spacer" />
+                <ui:VisualElement class="header-box orange-header">
+                    <ui:Label text="SELECIONE A RAIA" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="row input-row">
+                <ui:DropdownField name="DropdownDificuldade" index="1" choices="Fácil,Médio,Difícil" class="custom-dropdown" />
+                <ui:VisualElement class="spacer" />
+                <ui:DropdownField name="DropdownProva" index="0" choices="100m,200m,400m,800m,1500m,4x100m" class="custom-dropdown" />
+                <ui:VisualElement class="spacer" />
+                <ui:DropdownField name="DropdownRaia" index="2" choices="Raia 1,Raia 2,Raia 3,Raia 4,Raia 5,Raia 6,Raia 7,Raia 8" class="custom-dropdown orange-dropdown" />
+            </ui:VisualElement>
+            <ui:VisualElement class="row toggle-row">
+                <ui:Toggle label="AUTO CLICK" name="ToggleAutoClick" class="custom-toggle" />
+                <ui:VisualElement style="width: 20px;" />
+                <ui:Toggle label="MODO AUTOMÁTICO" name="ToggleAutomatico" value="false" class="custom-toggle switch-style" />
+            </ui:VisualElement>
+            <ui:Button text="INICIAR" name="BtnStart" class="start-button" />
+            <ui:Button text="MODO CINEMÁTICO" name="BtnReplay" class="cinematic-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
